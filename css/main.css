@@ -39,7 +39,7 @@ body {
 #showcase {
 	background-repeat: no-repeat;
 	background-position: center;
-	background-size: auto 100%;
+	background-size: 100% auto;
 }
 
 #showcase .row {
