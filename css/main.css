@@ -93,3 +93,15 @@ body {
 #mainFooter .row {
 	height: 50px;
 }
+
+@media(max-width: 900px) {
+	#showcase .row {
+		height: 300px;
+	}
+
+	#showcase {
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: 150%;
+	}	
+}
