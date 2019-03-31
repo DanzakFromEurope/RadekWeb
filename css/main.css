@@ -1,0 +1,95 @@
+body {
+	font-family: 'Roboto', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	margin: auto;
+}
+
+#mainHeader .title {
+	line-height: 1rem;
+	color: darkred;
+	text-decoration: none;
+}
+
+.paddingLeft {
+	padding-left: 10px;
+}
+
+#navbar {
+	background-color: darkred;
+}
+
+#navbar .row {
+	height: 50px;
+}
+
+#navbar a {
+	text-decoration: none;
+	color: white;
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+#navbar a:hover, #navbar a.active {
+	color: darkgray;
+}
+
+#showcase {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover
+}
+
+#showcase .row {
+	height: 500px;
+}
+
+#showcase h1 {
+	margin: 0;
+	font-size: 3rem;
+	text-transform: uppercase;
+}
+
+#mainContent .container {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.alignLeft {
+	text-align: left;
+}
+
+.sticky {
+	position: sticky;
+}
+
+#companyInfo {
+	background-color: darkred;
+	color: white;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+#companyInfo .topBorder {
+	border-top:2px solid white;
+}
+
+#companyInfo .smaller {
+	height: 100px;
+	margin-bottom: 20px;
+}
+
+#companyInfo .title {
+	color: white;
+	text-decoration: none;
+}
+
+#mainFooter {
+	background-color: wheat;
+}
+
+#mainFooter .row {
+	height: 50px;
+}
