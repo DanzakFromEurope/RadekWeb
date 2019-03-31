@@ -38,8 +38,8 @@ body {
 
 #showcase {
 	background-repeat: no-repeat;
-	background-position: center;
-	background-size: auto 100%;
+	background-position: center; height: auto;
+	
 }
 
 #showcase .row {
