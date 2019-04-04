@@ -1,7 +1,10 @@
-body {
+html, body {
 	font-family: 'Roboto', sans-serif;
+	width: 100%;
+	height: 100%;
 	margin: 0;
 	padding: 0;
+	overflow-x: hidden;
 }
 
 .container {
@@ -9,7 +12,7 @@ body {
 }
 
 #mainHeader .title {
-	line-height: 1rem;
+	line-height: 1em;
 	color: darkred;
 	text-decoration: none;
 }
@@ -23,13 +26,13 @@ body {
 }
 
 #navbar .row {
-	height: 50px;
+	height: 3em;
 }
 
 #navbar a {
 	text-decoration: none;
 	color: white;
-	font-size: 1.5rem;
+	font-size: 1.5em;
 	font-weight: bold;
 }
 #navbar a:hover, #navbar a.active {
@@ -38,12 +41,12 @@ body {
 
 #showcase {
 	background-repeat: no-repeat;
-	background-position: center; height: 100%;
-	
+	background-position: center;
+	background-size: 200%;
 }
 
 #showcase .row {
-	height: 500px;
+	height: 50vh;
 }
 
 #showcase h1 {
@@ -94,17 +97,42 @@ body {
 	height: 50px;
 }
 
-@media(max-width: 900px) {
-	#showcase .row {
-		height: 300px;
+@media(max-width: 1000px) {
+	#mainHeader .title {
+		font-size: 2vw;
 	}
-
-	#showcase {
-		background-repeat: no-repeat;
-		background-position: center;
-		background-size: auto 100%;
-	}	
-
-#mainHeader .title { color: blue;} 
 	
+	#navbar .row {
+		height: 6vw;
+	}
+	
+	#navbar a {
+		font-size: 3vw;
+	}
+	
+	#showcase .row {
+		height: 50vw;
+	}
+}
+
+@media(max-width: 500px) {
+	#mainHeader .title {
+		font-size: 0.6em;
+	}
+	
+	#navbar .row {
+		height: 1.8em;
+	}
+	
+	#navbar a {
+		font-size: 0.9em;
+	}
+	
+	#showcase {
+		background-size: cover;
+	}
+	
+	#showcase .row {
+		height: 250px;
+	}
 }
