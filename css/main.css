@@ -121,7 +121,7 @@ html, body {
 	}
 
 	#showcase {
-		background-size: 200%;
+		background-size: 150%;
 	}
 }
 
@@ -139,7 +139,7 @@ html, body {
 	}
 	
 	#showcase {
-		background-size: cover;
+		background-size: 150%;
 	}
 	
 	#showcase .row {
