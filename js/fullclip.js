@@ -4,7 +4,8 @@
     var settings = $.extend({
       current: 0,
       images: [],
-      transitionTime: 1000,
+      header: [],
+      transitionTime: 1,
       wait: 5000,
       static: false
     }, options);
@@ -12,17 +13,19 @@
     // preload images
     var i, end;
     for (i = 0, end = settings.images.length; i < end; ++i) {
-        new Image().src = settings.images[i];
+      new Image().src = settings.images[i];
     }
 
     // sort out the transitions + specify vendor prefixes
     $('#showcase')
       .css('background-image', 'url(' + settings.images[settings.current] + ')')
-      // .css('-webkit-transition', + settings.transitionTime + 's ease-in-out')
-      // .css('-moz-transition', + settings.transitionTime + 'ms ease-in-out')
-      // .css('-ms-transition', + settings.transitionTime + 'ms ease-in-out')
-      // .css('-o-transition', + settings.transitionTime + 'ms ease-in-out')
-      // .css('transition', + settings.transitionTime + 'ms ease-in-out')
+      // .css('-webkit-transition', 'opacity ' + settings.transitionTime + 's ease-in-out')
+      // .css('-moz-transition', 'opacity ' + settings.transitionTime + 's ease-in-out')
+      // .css('-ms-transition', 'opacity ' + settings.transitionTime + 's ease-in-out')
+      // .css('-o-transition', 'opacity ' + settings.transitionTime + 's ease-in-out')
+      // .css('transition', 'opacity ' + settings.transitionTime + 's ease-in-out')
+    $('#showcase h1')
+      .text(settings.header[settings.current])
 
     // if only one image, set as static background
     if (settings.static) {
@@ -34,7 +37,10 @@
     // change the background image
     (function update() {
       settings.current = (settings.current + 1) % settings.images.length;
-        $('#showcase').css('background-image', 'url(' + settings.images[settings.current] + ')');
+        $('#showcase')
+          .css('background-image', 'url(' + settings.images[settings.current] + ')')
+          //.css('transition', 'opacity ' + settings.transitionTime + 's ease-in-out');
+        $('#showcase h1').text(settings.header[settings.current]);
         setTimeout(update, settings.wait);
     }());
 }}(jQuery));
