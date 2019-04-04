@@ -17,10 +17,6 @@ html, body {
 	text-decoration: none;
 }
 
-.paddingLeft {
-	padding-left: 10px;
-}
-
 #navbar {
 	background-color: darkred;
 }
@@ -42,7 +38,7 @@ html, body {
 #showcase {
 	background-repeat: no-repeat;
 	background-position: center;
-	background-size: 200%;
+	background-size: cover;
 }
 
 #showcase .row {
@@ -58,14 +54,6 @@ html, body {
 #mainContent .container {
 	padding-top: 20px;
 	padding-bottom: 20px;
-}
-
-.alignLeft {
-	text-align: left;
-}
-
-.sticky {
-	position: sticky;
 }
 
 #companyInfo {
@@ -97,6 +85,24 @@ html, body {
 	height: 50px;
 }
 
+/*Simple layouut mod classes*/
+.paddingLeft {
+	padding-left: 10px;
+}
+
+.paddingRight {
+	padding-right: 10px;
+}
+
+.alignLeft {
+	text-align: left;
+}
+
+.sticky {
+	position: sticky;
+}
+
+/*Media queries*/
 @media(max-width: 1000px) {
 	#mainHeader .title {
 		font-size: 2vw;
@@ -112,6 +118,10 @@ html, body {
 	
 	#showcase .row {
 		height: 50vw;
+	}
+
+	#showcase {
+		background-size: 200%;
 	}
 }
 
