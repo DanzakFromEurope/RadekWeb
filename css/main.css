@@ -49,6 +49,7 @@ html, body {
 	margin: 0;
 	font-size: 3rem;
 	text-transform: uppercase;
+	color: blue;
 }
 
 #mainContent .container {
@@ -78,7 +79,8 @@ html, body {
 }
 
 #mainFooter {
-	background-color: wheat;
+	color: rgb(165, 165, 165);
+	background-color: rgb(133, 0, 0);
 }
 
 #mainFooter .row {
