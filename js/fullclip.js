@@ -25,7 +25,7 @@
       // .css('-o-transition', 'opacity ' + settings.transitionTime + 's ease-in-out')
       // .css('transition', 'opacity ' + settings.transitionTime + 's ease-in-out')
     $('#showcase h1')
-      .text(settings.header[settings.current])
+      .html(settings.header[settings.current])
 
     // if only one image, set as static background
     if (settings.static) {
@@ -40,7 +40,7 @@
         $('#showcase')
           .css('background-image', 'url(' + settings.images[settings.current] + ')')
           //.css('transition', 'opacity ' + settings.transitionTime + 's ease-in-out');
-        $('#showcase h1').text(settings.header[settings.current]);
+        $('#showcase h1').html(settings.header[settings.current]);
         setTimeout(update, settings.wait);
     }());
 }}(jQuery));
