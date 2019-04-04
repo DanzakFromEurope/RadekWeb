@@ -39,7 +39,7 @@
       settings.current = (settings.current + 1) % settings.images.length;
         $('#showcase')
           .css('background-image', 'url(' + settings.images[settings.current] + ')')
-          //.css('transition', 'opacity ' + settings.transitionTime + 's ease-in-out');
+          //.css('transition', 'opacity ' + settings.transitionTime + 's ease-in-out')
         $('#showcase h1').text(settings.header[settings.current]);
         setTimeout(update, settings.wait);
     }());
