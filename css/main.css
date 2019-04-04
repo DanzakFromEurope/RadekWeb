@@ -139,7 +139,7 @@ html, body {
 	}
 	
 	#showcase {
-		background-size: 150%;
+		background-size: cover;
 	}
 	
 	#showcase .row {
