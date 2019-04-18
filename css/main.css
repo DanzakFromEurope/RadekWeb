@@ -12,14 +12,14 @@ html, body {
 }
 
 .inRow {
-	margin: 0;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
 	-webkit-box-orient: horizontal;
 	-webkit-box-direction: normal;
 	    -ms-flex-direction: row;
-	        flex-direction: row;
+			flex-direction: row;
+	margin: 0;
 }
 
 .logoTitle {
@@ -46,7 +46,7 @@ html, body {
 }
 
 .inRow img {
-	width: 5rem;
+	height: 5rem;
 	padding: 5px;
 }
 
@@ -155,7 +155,7 @@ html, body {
 	}
 	
 	#mainHeader img {
-		width: 9vw;
+		height: 9vw;
 	}	
 
 	#navbar .row {
@@ -179,7 +179,7 @@ html, body {
 	}
 
 	#companyInfo img {
-		width: 9vw;
+		height: 9vw;
 	}
 }
 
