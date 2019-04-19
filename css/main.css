@@ -73,21 +73,34 @@ html, body {
 }
 
 #showcase {
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
+	position: relative;
+	margin: auto;
 }
 
-#showcase .row {
-	height: 50vh;
+#showcase img {
+	vertical-align: middle;
+	width: 100%;
 }
 
-#showcase h1 {
-	margin: 0;
-	font-size: 3rem;
-	text-transform: uppercase;
-	color: white;
-	text-shadow: -3px 0 5px rgb(19, 19, 19), 0 -3px 5px rgb(19, 19, 19), 3px 0 5px rgb(19, 19, 19), 0 3px 5px rgb(19, 19, 19);
+.mySlides {
+	display: none;
+}
+
+.fade {
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+	from {opacity: .4} 
+	to {opacity: 1}
+}
+
+@keyframes fade {
+	from {opacity: .4} 
+	to {opacity: 1}
 }
 
 #mainContent .container {
@@ -166,12 +179,9 @@ html, body {
 		font-size: 3vw;
 	}
 	
-	#showcase .row {
+	#showcase img {
 		height: 50vw;
-	}
-
-	#showcase {
-		background-size: 150%;
+		object-fit: cover;
 	}
 
 	#companyInfo .logoTitle {
@@ -200,13 +210,10 @@ html, body {
 	#navbar a {
 		font-size: 0.9em;
 	}
-	
-	#showcase {
-		background-size: cover;
-	}
-	
-	#showcase .row {
+		
+	#showcase img {
 		height: 250px;
+		object-fit: cover;
 	}
 
 	#showcase h1 {
